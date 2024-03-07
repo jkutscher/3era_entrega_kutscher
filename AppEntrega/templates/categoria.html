@@ -1,0 +1,27 @@
+{% extends "padre.html" %}
+
+{% block titulo %}
+    <h1>Categoria de Juego</h1>
+{% endblock %}
+
+{% block descripcion %}
+    <h2>Registrar Categoria</h2>
+{% endblock %}
+
+{% block form %}
+    <form action="" method="post"> {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Guardar">
+    </form>
+{% endblock %}
+
+{% block model %}
+   
+    <h2>Categoria</h2>
+{% endblock %}
+
+{% block text %}
+   
+<p>Categorias de juego para participar de los Premios Gamers 2024</p>
+
+{% endblock %}

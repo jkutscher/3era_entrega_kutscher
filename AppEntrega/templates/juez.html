@@ -1,0 +1,41 @@
+{% extends "padre.html" %}
+
+{% block titulo %}
+
+<h1>Juez</h1>
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+<h2>Aca puedes registrarte como Juez</h2>
+
+{% endblock %}
+
+
+{% block form %}
+
+<form action="" method="post"> {% csrf_token %}
+
+    {{form}}
+
+    <input type="submit" value="Guardar">
+
+
+
+</form>
+
+{% block model %}
+
+<h2>Juez</h2>
+
+{% endblock %}
+
+{% block text %}
+
+<p>Preparate para ser el mejor Juez y poder elegir a los mejores jugadores de latinoamerico</p>
+
+{% endblock %}
+
+{% endblock %}
