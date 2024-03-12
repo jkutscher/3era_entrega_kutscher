@@ -86,28 +86,35 @@
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
-<!-- About Section Heading-->
-<div class="mx-auto">
-    <h2 class="page-section-heading text-center text-uppercase text-white">
-        {% block model %}{% endblock %}
-    </h2>
-</div>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">
 
-<!-- Icon Divider-->
-<div class="divider-custom divider-light">
-    <div class="divider-custom-line"></div>
-    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-    <div class="divider-custom-line"></div>
-</div>
+            {% block model %}
 
-<!-- About Section Content-->
-<div class="row">
-    <div class="col-lg-4 ms-auto">
-        {% block text %}{% endblock %}
+            {% endblock %}
+
+
+        </h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">
+
+            {% block text %}
+
+            {% endblock %}
+
+
+        </p>
     </div>
-</div>
-</div>
-</section>
+</header>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
